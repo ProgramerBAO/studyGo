@@ -14,6 +14,7 @@ func main() {
 	var guess int
 	for {
 		fmt.Print("Please input your guess ")
+		// 输入
 		_, err := fmt.Scanf("%d\n", &guess)
 		if err != nil {
 			fmt.Println("Please enter an integer less than one hundred.")
