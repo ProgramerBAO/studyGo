@@ -11,9 +11,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 	secretNumber := rand.Intn(maxNum)
 	fmt.Println("The secret number is ", secretNumber)
-
 	var guess int
-
 	for {
 		fmt.Print("Please input your guess ")
 		_, err := fmt.Scanf("%d\n", &guess)
